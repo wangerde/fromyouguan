@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>pig首字母后置</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function alphabetPosition(text) {
+	  var string = 'abcdefghijklmnopqrstuvwxyz';
+	  var arr = string.split('');
+	  var result = [];
+	  var arr1 = text.split('');
+	   Array.prototype.getIndex = function(el){
+        for (var i=0, n=this.length; i<n; i++){
+                if (this[i] === el){
+                        return i+1;
+                }
+        }
+        return -1;
+	}
+	  return arr.getIndex(arr1);
+}
+    
+console.log(alphabetPosition('hello from'));
+</script>
+</body>
+</html>
