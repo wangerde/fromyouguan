@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>pig首字母后置</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function pigIt(str){
+  var words = str.split(" ");
+  for (w in words) {
+    words[w] = words[w].slice(1) + words[w].slice(0,1) + "ay"
+  }
+  return words.join(" ");
+}
+    
+console.log(pigIt('hello from'));
+</script>
+</body>
+</html>
